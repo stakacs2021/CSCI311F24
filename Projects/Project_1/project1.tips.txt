@@ -1,0 +1,47 @@
+Here are the tips regarding the user generated vectors to test the sorting methods for Project 1.
+
+According to Proj1 description, we need to get 5 sets of vectors (each set having a different length for its vectors, e.g,, 10, 100, 1000, 10000, and 100000) and each set shall have 50 user generated vectors, and we need to match these with each case (best, average, best) and sorting method (selection, bubble, insertion, and quicksort) pair. 
+
+So totally, we need to have 50 x 5 x 3 x 4 = 3000 user generated vectors.
+
+Do you really need to generate 3000 vectors one by one? 
+
+No, because you can reuse them.
+
+A: For the average case for all the sorting methods, all the numbers in the vectors are randomly generated, so you only need to have 50 x 5 = 250 vectors for the average case for all sorting methods.
+
+B: For the best case for insertion, selection, and bubble sorts, the vectors should be already sorted, and those vectors can also be used for the worst case for quicksort. So, for the best case of insertion, selection, and bubble sorts and the worst case for quicksort, we only need to have 50 x  5 = 250 vectors, each of which should be sorted already.
+
+C: For the worst case for insertion, selection, and bubble sorts, the vectors should be reversely sorted, so we can have 50 x 5 = 250 vectors for the worst case for insertion, selection, and bubble sorts. Each of the vectors in this group should be reversely sorted.
+
+D: For the best case for quicksort, we need to have 50 x 5 = 250 vectors, and according to the quicksort algorithm (where we select the first element to be the pivot element), we need to make sure the first element of the vector is the median value of the whole vector, and then when you go to the next round, you also need to make sure the first element of the subvector is also the median value of that subvector, etc.
+
+This is perhaps the trickest part. Use your creativity to generate the vectors we need.
+
+In summary,
+
+A: 250 vectors that contain random numbers.
+
+B: 250 vectors that are already sorted.
+
+C: 250 vectors that are already reversely sorted.
+
+D: 250 special vectors, as described above.
+
+You only need to generate these 1000 vectors using the code snippets given in project1 Look at the following table.
+
+                        insertion                       selection                              bubble                       quicksort
+
+Best case                  B                                 B                                   B                               D
+
+Avg case                   A                                 A                                   A                               A
+
+Worst case                 C                                 C                                   C                               B
+
+
+
+In addition, here is my tips on how to deal with D.
+
+I suggest you change the quicksort algorithm for the best case test only. This is time, we are using the element in the middle as the pivot. In this case, you can use B to replace D.
+
+However, you must make sure that for the average and worst case, you will be still using the original version of the quicksort algorithm that selects the first element in the vector as the pivot, or you at least will not be able to use B to test it for the worst case!
