@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#./runTests <executable> <directory with test files> <optional question number>
+
+passed=0
+failed=0
+for f in "$2"/*.in
+do
+  if [[ ( ! -z "$3" ) && ( "$3" != $(head -n 1 $f) ) ]]
+  then
+     continue
+  fi
+  basefile=$(basename -- "$f")
+  #extension="${basefile##*.}"
+  testfile="${basefile%.*}.test"
+  outfile="$2${basefile%.*}.out"
+  difffile="$2${basefile%.*}.diff"
+  echo -n "Running test $f..."
+  ./"$1" < "$f" > $testfile
+  if cmp -s "$testfile" "$outfile"
+  then
+    echo "passed"
+    passed=$((passed+1))
+    rm -f "$difffile"
+  else
+    echo "failed, see $difffile"
+    diff "$testfile" "$outfile" > "$difffile"
+    failed=$((failed+1))
+  fi
+  rm $testfile
+done
+
+echo $passed" PASSED out of "$(($failed+$passed))" ("$failed" failed)"
+
