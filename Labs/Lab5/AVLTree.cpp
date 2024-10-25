@@ -109,11 +109,8 @@ void AVLTree::insertValue(int val){
 std::shared_ptr<AVLNode> AVLTree::insertValue(std::shared_ptr<AVLNode> n, int val){
     if(n == nullptr){
         size++;
-        /*
-        make_shared safer/faster way to pass shared point per this stackoverflow:
-        https://stackoverflow.com/questions/20895648/difference-in-make-shared-and-normal-shared-ptr-in-c
-        */
-        return std::make_shared<AVLNode>(val);
+        //now using shared_ptr to make it consistent with the rest of the class
+        return std::shared_ptr<AVLNode>(new AVLNode (val));
     }
     else if(val < n->value){
         n->left = insertValue(n->left, val);

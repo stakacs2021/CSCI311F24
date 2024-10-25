@@ -12,7 +12,7 @@
 
 //G1_EXCEPTION: Only produce your code as directed in Section A, B, C, and D1_EXCEPTION.
 //G2_EXCEPTION: Do not write anything at the other places in this file.
-//D1_EXCEPTION: Put you names here (on this line):______________________________________
+//D1_EXCEPTION: Put you names here (on this line): Stephan Takacs
 
 /***********************************************
 *************SECTION-A-HEADERS******************
@@ -23,7 +23,7 @@
 
 
 
-//SECTION_A_END: Section A ends here. 
+//SECTION_A_END: Section A ends here.
 /***********************************************
 *************SECTION-A-HEADERS-END**************
 ************************************************/
@@ -37,7 +37,7 @@
 
 
 
-//SECTION_B_END: Section B ends here. 
+//SECTION_B_END: Section B ends here.
 /***********************************************
 *************SECTION-B-CLASSES-END**************
 ************************************************/
@@ -52,7 +52,7 @@
 
 
 
-//SECTION_C_END: Section C ends here. 
+//SECTION_C_END: Section C ends here.
 /***********************************************
 ************SECTION-C-MAIN-FUNCTION-END*********
 ************************************************/
