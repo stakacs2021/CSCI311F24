@@ -23,6 +23,7 @@
 #include <queue>
 #include <vector>
 #include <cmath>
+#include <stdexcept>
 using namespace std;
 
 
@@ -49,13 +50,15 @@ and function to print
 */
 //SECTION_B_START: put all your classes definitions here.
 //aircraft class
-class aircraft {
+class Aircraft {
 public:    //variables
     int tOE, acID, acPriority;
     string depOrArr;
 
+    //default constructor should fix issues with peek/print
+    Aircraft() : tOE(0), acID(0), acPriority(0), depOrArr("") {}
     //constructor
-    aircraft(int time, int identification, int priority, const string& status)
+    Aircraft(int time, int identification, int priority, const string& status)
         : tOE(time), acID(identification), acPriority(priority), depOrArr(status) {}
 
     //print deets
@@ -63,14 +66,14 @@ public:    //variables
         cout << "Aircraft ID: " << acID;
         cout << ", Priority: " << acPriority;
         cout << ", Time of Entry: " << tOE;
-        cout << ", Status: " << depOrArr;
+        cout << ", Status: " << depOrArr << endl;
 
     }
 
     //going to overload the < operator so can do priority comparison in heap
     //rewrote once I wrote the rest of the priority queue class to include < and >
     //for max heapify, push
-    bool operator>(const aircraft& other) const{
+    bool operator>(const Aircraft& other) const{
         //if priority is the same then its based on toe
         if (acPriority == other.acPriority){
             return tOE < other.tOE;
@@ -78,7 +81,7 @@ public:    //variables
         return acPriority > other.acPriority;
     }
 
-    bool operator<(const aircraft& other) const {
+    bool operator<(const Aircraft& other) const {
         return !(*this > other);
     }
 };
@@ -103,7 +106,7 @@ lower priority value = greater priority
 */
 class PriorityQueue{
 private:
-        vector<aircraft> heap;
+        vector<Aircraft> heap;
 
         //heapify to maintain order
         /*
@@ -162,7 +165,7 @@ public:
     swap(H, i, floor((i-1)/2))
     i = floor((i-1)/2)
     */
-    void push(const aircraft& aircraft){
+    void push(const Aircraft& aircraft){
         heap.push_back(aircraft);
 
         int i = heap.size() - 1;
@@ -186,15 +189,15 @@ public:
         maxHeapify(0);
     }
 
-    aircraft peek() const {
+    Aircraft peek() const {
         if (empty()) {
             cerr << "PQueue is empty" <<endl;
-            return aircraft();
+            return Aircraft();
         }
         return heap[0];
     }
 
-    aircraft& top() {
+    Aircraft& top() {
         if(empty()) {
             cerr << "PQueue is empty" << endl;
         }
@@ -203,8 +206,8 @@ public:
 
     void printQueue() const{
         cout << "PQueue Elements: " << endl;
-        for(const auto& aircraft : heap) {
-            aircraft.printAC();
+        for(const auto& currAircraft : heap) {
+           currAircraft.printAC();
         }
     }
 
@@ -228,7 +231,31 @@ public:
 *************SECTION-C-MAIN-FUNCTION************
 ************************************************/
 //SECTION_C_START: write your main function here.
+//writing a test main:
+int main() {
+    PriorityQueue sampleRunway;
 
+    //adding sample acs
+    sampleRunway.push(Aircraft(10, 101, 2, "arriving"));
+    sampleRunway.push(Aircraft(12, 102, 3, "departing"));
+    sampleRunway.push(Aircraft(11, 103, 2, "arriving"));
+    sampleRunway.push(Aircraft(13, 104, 5, "departing"));
+
+    //check if everything was loaded correctly
+    sampleRunway.printQueue();
+
+    //check priority functionality
+    while (!sampleRunway.empty()) {
+        Aircraft aircraft = sampleRunway.peek();
+        sampleRunway.pop();
+
+        //output currently processing
+        cout << "Processing ";
+        aircraft.printAC();
+    }
+
+    return 0;
+}
 
 
 
