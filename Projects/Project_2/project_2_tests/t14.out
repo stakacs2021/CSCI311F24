@@ -1,0 +1,24 @@
+Time step 2
+	Entering simulation
+		2 1 arriving 4
+		2 2 arriving 4
+		2 3 arriving 2
+	Runway A
+		2 1 arriving 4
+	Runway B
+		2 3 arriving 2
+Time step 3
+	Entering simulation
+		3 4 arriving 4
+		3 5 arriving 1
+		3 6 arriving 1
+	Runway A
+		3 6 arriving 1
+	Runway B
+		3 5 arriving 1
+Time step 4
+	Entering simulation
+	Runway A
+		3 4 arriving 4
+	Runway B
+		2 2 arriving 4
