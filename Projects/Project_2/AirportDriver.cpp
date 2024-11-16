@@ -52,14 +52,14 @@ and function to print
 //aircraft class
 class Aircraft {
 public:    //variables
-    int tOE, acID, acPriority;
+    int tOE, acID, acPriority, inputOrder;
     string depOrArr;
 
     //default constructor should fix issues with peek/print
-    Aircraft() : tOE(0), acID(0), acPriority(0), depOrArr("") {}
+    Aircraft() : tOE(0), acID(0), acPriority(0), depOrArr(""), inputOrder(0) {}
     //constructor
-    Aircraft(int time, int identification, int priority, const string& status)
-        : tOE(time), acID(identification), acPriority(priority), depOrArr(status) {}
+    Aircraft(int time, int identification, int priority, const string& status, int order)
+        : tOE(time), acID(identification), acPriority(priority), depOrArr(status), inputOrder(order) {}
 
     //print deets
     void printAC() const {
@@ -76,12 +76,17 @@ public:    //variables
     //going to overload the < operator so can do priority comparison in heap
     //rewrote once I wrote the rest of the priority queue class to include < and >
     //for max heapify, push
+    //for the t31 fail its gotta be this im so silly <- handle same toe and prior
     bool operator>(const Aircraft& other) const{
         //if priority is the same then its based on toe
+        //now need to add equivalency for equal priorities && same toe for which I added input order var
         if (acPriority == other.acPriority){
+            if(tOE == other.tOE){
+                return inputOrder < other.inputOrder;
+            }
             return tOE < other.tOE;
         }
-        return acPriority > other.acPriority;
+        return acPriority < other.acPriority;
     }
 
     bool operator<(const Aircraft& other) const {
@@ -293,6 +298,8 @@ int main() {
     cin >> numAircraft;
 
     //create a vector of the aircrafts by reading in from input
+    //updating this part to account for input order as well, using iterator inputOrderCounter
+    int inputOrderCounter = 0;
     vector<Aircraft> aircraftList;
     for(int i =0; i < numAircraft; i++){
         //take all different variables of aircraft and load them in
@@ -300,7 +307,8 @@ int main() {
         string status;
         cin >> time >> id >> status >> priority;
         //load them all into each aircraft in the vector
-        aircraftList.push_back(Aircraft(time, id, priority, status));
+        aircraftList.push_back(Aircraft(time, id, priority, status, inputOrderCounter));
+        inputOrderCounter++;
     }
     //now start simulation
     //track time for stepping
