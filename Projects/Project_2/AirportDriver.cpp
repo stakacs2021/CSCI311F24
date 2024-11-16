@@ -63,10 +63,13 @@ public:    //variables
 
     //print deets
     void printAC() const {
+        /* debug labeled out
         cout << "Aircraft ID: " << acID;
         cout << ", Priority: " << acPriority;
         cout << ", Time of Entry: " << tOE;
         cout << ", Status: " << depOrArr << endl;
+        */
+        cout << tOE << " " << acID << " " << depOrArr << " " << acPriority << endl;
 
     }
 
@@ -206,8 +209,8 @@ public:
 
     void printQueue() const{
         cout << "PQueue Elements: " << endl;
-        for(const auto& currAircraft : heap) {
-           currAircraft.printAC();
+        for(int i = 0; i < heap.size(); i++) {
+           heap[i].printAC();
         }
     }
 
@@ -233,6 +236,7 @@ public:
 //SECTION_C_START: write your main function here.
 //writing a test main:
 int main() {
+    /* Small testing function for classes
     PriorityQueue sampleRunway;
 
     //adding sample acs
@@ -253,7 +257,157 @@ int main() {
         cout << "Processing ";
         aircraft.printAC();
     }
+    */
 
+    /*
+   main simulation:
+   requirements:
+   time is incremented discreetly
+   at each time step something should be printed
+   Output format:
+   time step <time>
+    Entering simulation
+        <aircraft information>
+        <...>
+        <aircraft information>
+   Runway A
+    <aircraft information>
+   Runway B
+    <aircraft information>
+    Input info: each indentation is a tab, use esc \t
+    Ex output (one aircraft enters sim, one takes off runway A timestep 42)
+    Time step 42
+        Entering simulation
+            42 10 departing 5
+        Runway A
+            23 4 departing 2
+    Runway B
+    ________
+    main function first starts off by taking number of aircraft coming in
+    going to make a vect of the aircraft based on that number
+    then read the status of them all into the vect
+    then create pqs for the aircrafts
+    */
+    //take number of aircraft
+    int numAircraft;
+    cin >> numAircraft;
+
+    //create a vector of the aircrafts by reading in from input
+    vector<Aircraft> aircraftList;
+    for(int i =0; i < numAircraft; i++){
+        //take all different variables of aircraft and load them in
+        int time, id, priority;
+        string status;
+        cin >> time >> id >> status >> priority;
+        //load them all into each aircraft in the vector
+        aircraftList.push_back(Aircraft(time, id, priority, status));
+    }
+    //now start simulation
+    //track time for stepping
+    int currentTime = 0;
+    //track list of aircraft
+    int index = 0;
+    //i am pretty sure the professor said I should make to pqs for arriving and dept, but i could not really hear him. This is the approach I am going to take though at it seems way more simple
+    PriorityQueue departures;
+    PriorityQueue arrivals;
+
+    //actual simulation loop
+    //want to loop through the list of aircraft until we have visited them all or departures or arrivals is empty
+    while(index < aircraftList.size() || !departures.empty() || !arrivals.empty()){
+        //bool to track each landing/takeoff
+        bool eventOccurred = false;
+
+        //create a new vector of aircraft that are in action at the current time
+        vector<Aircraft> currTimeAircraft;
+        while (index < aircraftList.size() && aircraftList[index].tOE == currentTime){
+            //if we find an aircraft that is currently in action eval
+            const Aircraft& currAircraft = aircraftList[index];
+            if(currAircraft.depOrArr == "departing"){
+                departures.push(currAircraft);
+            }
+            else if(currAircraft.depOrArr == "arriving"){
+                arrivals.push(currAircraft);
+            }
+            currTimeAircraft.push_back(currAircraft);
+            index++;
+            eventOccurred = true;
+        }
+
+        //now manage ac info for runways
+        Aircraft aircraftA;
+        Aircraft aircraftB;
+        //track which runway is being used
+        bool runwayAUsed = false;
+        bool runwayBUsed = false;
+
+        //process runways
+        //runway A
+        if(!departures.empty()) {
+            aircraftA = departures.peek();
+            departures.pop();
+            runwayAUsed = true;
+            eventOccurred = true;
+        }
+        else if(!arrivals.empty()){
+            aircraftA = arrivals.peek();
+            arrivals.pop();
+            runwayAUsed = true;
+            eventOccurred = true;
+        }
+
+        //runway b
+        if(!arrivals.empty()) {
+            aircraftB = arrivals.peek();
+            arrivals.pop();
+            runwayBUsed = true;
+            eventOccurred = true;
+        }
+        else if(!departures.empty()){
+            aircraftB = departures.peek();
+            departures.pop();
+            runwayBUsed = true;
+            eventOccurred = true;
+        }
+
+        /*now everytime an event happens need to output
+        output format:
+        Output format:
+        time step <time>
+         Entering simulation
+             <aircraft information>
+             <...>
+             <aircraft information>
+        Runway A
+         <aircraft information>
+        Runway B
+         <aircraft information>
+        */
+        if(eventOccurred) {
+            cout << "Time step " << currentTime << endl;
+
+            cout << "\tEntering simulation" << endl;
+            for(int i = 0; i < currTimeAircraft.size(); i++){
+                cout << "\t\t";
+                currTimeAircraft[i].printAC();
+            }
+
+            //runway a out
+            cout << "\tRunway A" << endl;
+            if(runwayAUsed){
+                cout << "\t\t";
+                aircraftA.printAC();
+            }
+
+            //runway b out
+            cout << "\tRunway B" << endl;
+            if(runwayBUsed){
+                cout << "\t\t";
+                aircraftB.printAC();
+            }
+        }
+        //after each event step time
+        currentTime++;
+    }
     return 0;
 }
 
