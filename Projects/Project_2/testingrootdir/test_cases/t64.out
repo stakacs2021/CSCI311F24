@@ -1,0 +1,1574 @@
+Time step 0
+	Entering simulation
+		0 1 departing 3
+		0 2 departing 4
+		0 3 departing 2
+		0 4 departing 4
+		0 5 departing 4
+		0 6 departing 3
+		0 7 arriving 3
+		0 8 departing 4
+		0 9 arriving 2
+		0 10 departing 1
+	Runway A
+		0 10 departing 1
+	Runway B
+		0 9 arriving 2
+Time step 1
+	Entering simulation
+		1 11 departing 4
+		1 12 arriving 1
+		1 13 arriving 1
+		1 14 arriving 3
+	Runway A
+		0 3 departing 2
+	Runway B
+		1 12 arriving 1
+Time step 2
+	Entering simulation
+		2 15 departing 3
+		2 16 departing 4
+		2 17 arriving 3
+		2 18 arriving 1
+		2 19 arriving 1
+		2 20 departing 4
+		2 21 arriving 3
+		2 22 departing 1
+		2 23 departing 4
+		2 24 departing 3
+		2 25 arriving 4
+		2 26 departing 1
+		2 27 arriving 3
+		2 28 departing 1
+		2 29 arriving 3
+		2 30 departing 4
+	Runway A
+		2 22 departing 1
+	Runway B
+		1 13 arriving 1
+Time step 3
+	Entering simulation
+		3 31 departing 1
+		3 32 arriving 1
+		3 33 departing 1
+		3 34 departing 3
+		3 35 departing 2
+		3 36 departing 2
+	Runway A
+		2 26 departing 1
+	Runway B
+		2 18 arriving 1
+Time step 4
+	Entering simulation
+		4 37 departing 1
+		4 38 departing 1
+		4 39 departing 1
+		4 40 departing 2
+		4 41 arriving 3
+		4 42 departing 3
+		4 43 departing 1
+		4 44 arriving 1
+		4 45 departing 3
+		4 46 arriving 2
+		4 47 departing 4
+		4 48 departing 2
+		4 49 arriving 1
+		4 50 departing 1
+		4 51 arriving 1
+		4 52 arriving 2
+	Runway A
+		2 28 departing 1
+	Runway B
+		2 19 arriving 1
+Time step 5
+	Entering simulation
+		5 53 departing 1
+		5 54 arriving 3
+		5 55 departing 4
+		5 56 arriving 3
+		5 57 departing 4
+		5 58 arriving 3
+		5 59 arriving 1
+		5 60 arriving 2
+		5 61 departing 1
+		5 62 arriving 1
+		5 63 arriving 2
+		5 64 departing 2
+		5 65 departing 1
+		5 66 departing 2
+		5 67 departing 4
+	Runway A
+		3 31 departing 1
+	Runway B
+		3 32 arriving 1
+Time step 6
+	Entering simulation
+		6 68 departing 1
+		6 69 arriving 2
+		6 70 arriving 1
+		6 71 arriving 3
+		6 72 departing 1
+		6 73 arriving 4
+		6 74 departing 2
+		6 75 departing 4
+	Runway A
+		3 33 departing 1
+	Runway B
+		4 44 arriving 1
+Time step 7
+	Entering simulation
+		7 76 arriving 2
+		7 77 arriving 2
+		7 78 departing 1
+		7 79 arriving 2
+		7 80 arriving 1
+		7 81 departing 1
+		7 82 departing 1
+		7 83 departing 2
+		7 84 arriving 3
+		7 85 departing 4
+		7 86 arriving 2
+		7 87 departing 4
+		7 88 arriving 3
+		7 89 arriving 3
+		7 90 arriving 2
+		7 91 arriving 3
+		7 92 arriving 1
+	Runway A
+		4 37 departing 1
+	Runway B
+		4 49 arriving 1
+Time step 8
+	Entering simulation
+		8 93 arriving 3
+		8 94 departing 3
+		8 95 arriving 4
+		8 96 arriving 1
+		8 97 departing 1
+		8 98 departing 3
+		8 99 departing 2
+		8 100 departing 2
+		8 101 arriving 2
+		8 102 arriving 2
+		8 103 arriving 4
+		8 104 arriving 4
+		8 105 arriving 3
+		8 106 arriving 3
+	Runway A
+		4 38 departing 1
+	Runway B
+		4 51 arriving 1
+Time step 9
+	Entering simulation
+		9 107 departing 2
+		9 108 arriving 1
+		9 109 departing 2
+		9 110 departing 3
+		9 111 departing 1
+		9 112 departing 2
+		9 113 arriving 1
+		9 114 departing 4
+		9 115 departing 3
+	Runway A
+		4 39 departing 1
+	Runway B
+		5 59 arriving 1
+Time step 10
+	Entering simulation
+		10 116 arriving 4
+		10 117 arriving 4
+		10 118 departing 2
+		10 119 arriving 3
+		10 120 arriving 2
+		10 121 departing 3
+		10 122 departing 2
+		10 123 arriving 3
+		10 124 departing 4
+		10 125 arriving 2
+		10 126 departing 1
+		10 127 departing 1
+	Runway A
+		4 43 departing 1
+	Runway B
+		5 62 arriving 1
+Time step 11
+	Entering simulation
+		11 128 departing 3
+		11 129 arriving 2
+		11 130 arriving 2
+		11 131 departing 1
+		11 132 arriving 3
+		11 133 arriving 4
+		11 134 arriving 4
+		11 135 arriving 3
+		11 136 departing 2
+	Runway A
+		4 50 departing 1
+	Runway B
+		6 70 arriving 1
+Time step 12
+	Entering simulation
+		12 137 departing 4
+		12 138 arriving 4
+		12 139 departing 4
+	Runway A
+		5 53 departing 1
+	Runway B
+		7 80 arriving 1
+Time step 13
+	Entering simulation
+		13 140 arriving 3
+		13 141 departing 1
+		13 142 arriving 3
+		13 143 departing 1
+		13 144 arriving 1
+		13 145 departing 3
+		13 146 departing 2
+		13 147 arriving 4
+		13 148 departing 3
+		13 149 departing 3
+		13 150 departing 3
+		13 151 departing 4
+		13 152 arriving 1
+		13 153 arriving 1
+		13 154 arriving 4
+		13 155 departing 3
+		13 156 departing 1
+		13 157 arriving 1
+	Runway A
+		5 61 departing 1
+	Runway B
+		7 92 arriving 1
+Time step 14
+	Entering simulation
+		14 158 departing 3
+		14 159 arriving 1
+		14 160 arriving 3
+		14 161 arriving 4
+		14 162 arriving 4
+		14 163 arriving 3
+	Runway A
+		5 65 departing 1
+	Runway B
+		8 96 arriving 1
+Time step 15
+	Entering simulation
+		15 164 arriving 2
+		15 165 arriving 2
+		15 166 arriving 2
+		15 167 departing 4
+		15 168 arriving 2
+		15 169 arriving 1
+		15 170 departing 1
+		15 171 arriving 3
+		15 172 arriving 1
+		15 173 departing 1
+		15 174 arriving 2
+		15 175 departing 4
+		15 176 departing 4
+		15 177 arriving 4
+		15 178 departing 1
+		15 179 departing 4
+	Runway A
+		6 68 departing 1
+	Runway B
+		9 108 arriving 1
+Time step 16
+	Entering simulation
+		16 180 departing 2
+		16 181 departing 3
+		16 182 arriving 2
+		16 183 arriving 2
+	Runway A
+		6 72 departing 1
+	Runway B
+		9 113 arriving 1
+Time step 17
+	Entering simulation
+		17 184 departing 2
+		17 185 departing 3
+		17 186 departing 4
+		17 187 arriving 4
+		17 188 arriving 3
+		17 189 arriving 3
+		17 190 arriving 3
+		17 191 departing 2
+		17 192 departing 4
+		17 193 arriving 3
+	Runway A
+		7 78 departing 1
+	Runway B
+		13 144 arriving 1
+Time step 18
+	Entering simulation
+		18 194 arriving 4
+		18 195 departing 4
+		18 196 arriving 4
+		18 197 departing 1
+		18 198 arriving 3
+		18 199 departing 3
+		18 200 arriving 3
+		18 201 arriving 2
+		18 202 departing 3
+		18 203 arriving 3
+		18 204 departing 3
+		18 205 arriving 1
+		18 206 arriving 1
+		18 207 departing 3
+		18 208 arriving 2
+	Runway A
+		7 81 departing 1
+	Runway B
+		13 152 arriving 1
+Time step 19
+	Entering simulation
+		19 209 arriving 4
+		19 210 arriving 2
+		19 211 departing 1
+		19 212 departing 2
+		19 213 departing 2
+		19 214 departing 1
+		19 215 departing 4
+	Runway A
+		7 82 departing 1
+	Runway B
+		13 153 arriving 1
+Time step 20
+	Entering simulation
+		20 216 departing 3
+		20 217 arriving 2
+		20 218 arriving 3
+		20 219 departing 2
+		20 220 departing 1
+		20 221 arriving 4
+		20 222 departing 1
+		20 223 arriving 2
+		20 224 departing 2
+		20 225 arriving 3
+		20 226 departing 4
+		20 227 departing 4
+		20 228 departing 1
+		20 229 departing 2
+		20 230 arriving 1
+		20 231 departing 3
+		20 232 arriving 4
+		20 233 departing 2
+	Runway A
+		8 97 departing 1
+	Runway B
+		13 157 arriving 1
+Time step 21
+	Entering simulation
+		21 234 arriving 2
+		21 235 arriving 3
+		21 236 departing 4
+		21 237 arriving 3
+		21 238 departing 4
+		21 239 departing 3
+		21 240 departing 1
+		21 241 arriving 4
+		21 242 arriving 3
+		21 243 departing 1
+		21 244 departing 2
+		21 245 arriving 4
+		21 246 departing 1
+		21 247 arriving 4
+		21 248 arriving 2
+	Runway A
+		9 111 departing 1
+	Runway B
+		14 159 arriving 1
+Time step 22
+	Entering simulation
+		22 249 arriving 1
+		22 250 arriving 1
+		22 251 arriving 1
+		22 252 arriving 1
+		22 253 arriving 1
+		22 254 departing 1
+		22 255 arriving 4
+		22 256 departing 2
+		22 257 departing 3
+		22 258 departing 1
+		22 259 departing 3
+		22 260 arriving 1
+		22 261 departing 1
+	Runway A
+		10 126 departing 1
+	Runway B
+		15 169 arriving 1
+Time step 23
+	Entering simulation
+		23 262 departing 2
+		23 263 departing 2
+		23 264 arriving 1
+		23 265 departing 4
+		23 266 departing 4
+		23 267 arriving 1
+		23 268 arriving 2
+		23 269 arriving 2
+		23 270 departing 1
+		23 271 departing 2
+		23 272 arriving 3
+	Runway A
+		10 127 departing 1
+	Runway B
+		15 172 arriving 1
+Time step 24
+	Entering simulation
+		24 273 arriving 3
+		24 274 departing 3
+		24 275 arriving 1
+		24 276 departing 3
+		24 277 arriving 3
+		24 278 departing 1
+		24 279 departing 1
+		24 280 departing 3
+		24 281 arriving 3
+		24 282 departing 3
+		24 283 arriving 1
+		24 284 arriving 4
+		24 285 arriving 4
+		24 286 arriving 2
+	Runway A
+		11 131 departing 1
+	Runway B
+		18 205 arriving 1
+Time step 25
+	Entering simulation
+		25 287 arriving 2
+		25 288 departing 2
+		25 289 departing 3
+		25 290 departing 2
+	Runway A
+		13 141 departing 1
+	Runway B
+		18 206 arriving 1
+Time step 26
+	Entering simulation
+		26 291 arriving 2
+		26 292 arriving 3
+		26 293 departing 2
+	Runway A
+		13 143 departing 1
+	Runway B
+		20 230 arriving 1
+Time step 27
+	Entering simulation
+		27 294 arriving 4
+		27 295 arriving 1
+		27 296 departing 4
+	Runway A
+		13 156 departing 1
+	Runway B
+		22 249 arriving 1
+Time step 28
+	Entering simulation
+		28 297 departing 3
+		28 298 arriving 1
+		28 299 arriving 3
+		28 300 departing 4
+		28 301 departing 2
+		28 302 arriving 2
+		28 303 departing 3
+		28 304 arriving 3
+		28 305 departing 1
+		28 306 departing 4
+		28 307 arriving 4
+	Runway A
+		15 170 departing 1
+	Runway B
+		22 250 arriving 1
+Time step 29
+	Entering simulation
+		29 308 departing 2
+		29 309 arriving 3
+		29 310 arriving 2
+		29 311 arriving 1
+		29 312 departing 1
+		29 313 arriving 4
+		29 314 arriving 4
+		29 315 arriving 2
+		29 316 departing 3
+		29 317 departing 1
+		29 318 departing 3
+		29 319 departing 1
+		29 320 departing 1
+		29 321 arriving 4
+		29 322 departing 1
+	Runway A
+		15 173 departing 1
+	Runway B
+		22 251 arriving 1
+Time step 30
+	Entering simulation
+		30 323 arriving 1
+		30 324 departing 2
+		30 325 departing 4
+		30 326 departing 1
+		30 327 departing 3
+		30 328 arriving 2
+	Runway A
+		15 178 departing 1
+	Runway B
+		22 252 arriving 1
+Time step 31
+	Entering simulation
+		31 329 departing 2
+		31 330 arriving 1
+		31 331 arriving 2
+		31 332 arriving 3
+		31 333 departing 2
+		31 334 arriving 1
+		31 335 arriving 4
+		31 336 departing 4
+		31 337 departing 3
+		31 338 departing 1
+		31 339 arriving 3
+		31 340 departing 1
+		31 341 arriving 3
+		31 342 arriving 3
+		31 343 departing 2
+		31 344 arriving 1
+	Runway A
+		18 197 departing 1
+	Runway B
+		22 253 arriving 1
+Time step 32
+	Entering simulation
+		32 345 arriving 3
+		32 346 departing 3
+		32 347 departing 4
+		32 348 departing 1
+		32 349 arriving 4
+		32 350 arriving 1
+		32 351 arriving 2
+		32 352 departing 3
+		32 353 departing 4
+		32 354 arriving 4
+	Runway A
+		19 211 departing 1
+	Runway B
+		22 260 arriving 1
+Time step 33
+	Entering simulation
+		33 355 departing 1
+		33 356 departing 3
+	Runway A
+		19 214 departing 1
+	Runway B
+		23 264 arriving 1
+Time step 34
+	Entering simulation
+		34 357 arriving 3
+		34 358 arriving 2
+		34 359 arriving 4
+		34 360 departing 1
+		34 361 departing 2
+		34 362 departing 1
+		34 363 arriving 3
+		34 364 arriving 2
+		34 365 arriving 1
+		34 366 arriving 4
+		34 367 arriving 4
+		34 368 departing 2
+		34 369 arriving 3
+		34 370 arriving 1
+		34 371 departing 1
+		34 372 arriving 2
+		34 373 arriving 1
+		34 374 arriving 3
+		34 375 departing 4
+	Runway A
+		20 220 departing 1
+	Runway B
+		23 267 arriving 1
+Time step 35
+	Entering simulation
+		35 376 arriving 1
+		35 377 departing 3
+		35 378 departing 2
+		35 379 departing 4
+		35 380 arriving 1
+		35 381 departing 1
+	Runway A
+		20 222 departing 1
+	Runway B
+		24 275 arriving 1
+Time step 36
+	Entering simulation
+		36 382 arriving 3
+		36 383 arriving 1
+		36 384 arriving 4
+		36 385 arriving 3
+		36 386 departing 3
+		36 387 departing 3
+		36 388 departing 3
+		36 389 arriving 4
+		36 390 departing 1
+		36 391 departing 3
+		36 392 arriving 1
+		36 393 departing 4
+	Runway A
+		20 228 departing 1
+	Runway B
+		24 283 arriving 1
+Time step 37
+	Entering simulation
+	Runway A
+		21 240 departing 1
+	Runway B
+		27 295 arriving 1
+Time step 38
+	Entering simulation
+	Runway A
+		21 243 departing 1
+	Runway B
+		28 298 arriving 1
+Time step 39
+	Entering simulation
+	Runway A
+		21 246 departing 1
+	Runway B
+		29 311 arriving 1
+Time step 40
+	Entering simulation
+	Runway A
+		22 254 departing 1
+	Runway B
+		30 323 arriving 1
+Time step 41
+	Entering simulation
+	Runway A
+		22 258 departing 1
+	Runway B
+		31 330 arriving 1
+Time step 42
+	Entering simulation
+	Runway A
+		22 261 departing 1
+	Runway B
+		31 334 arriving 1
+Time step 43
+	Entering simulation
+	Runway A
+		23 270 departing 1
+	Runway B
+		31 344 arriving 1
+Time step 44
+	Entering simulation
+	Runway A
+		24 278 departing 1
+	Runway B
+		32 350 arriving 1
+Time step 45
+	Entering simulation
+	Runway A
+		24 279 departing 1
+	Runway B
+		34 365 arriving 1
+Time step 46
+	Entering simulation
+	Runway A
+		28 305 departing 1
+	Runway B
+		34 370 arriving 1
+Time step 47
+	Entering simulation
+	Runway A
+		29 312 departing 1
+	Runway B
+		34 373 arriving 1
+Time step 48
+	Entering simulation
+	Runway A
+		29 317 departing 1
+	Runway B
+		35 376 arriving 1
+Time step 49
+	Entering simulation
+	Runway A
+		29 319 departing 1
+	Runway B
+		35 380 arriving 1
+Time step 50
+	Entering simulation
+	Runway A
+		29 320 departing 1
+	Runway B
+		36 383 arriving 1
+Time step 51
+	Entering simulation
+	Runway A
+		29 322 departing 1
+	Runway B
+		36 392 arriving 1
+Time step 52
+	Entering simulation
+	Runway A
+		30 326 departing 1
+	Runway B
+		4 46 arriving 2
+Time step 53
+	Entering simulation
+	Runway A
+		31 338 departing 1
+	Runway B
+		4 52 arriving 2
+Time step 54
+	Entering simulation
+	Runway A
+		31 340 departing 1
+	Runway B
+		5 60 arriving 2
+Time step 55
+	Entering simulation
+	Runway A
+		32 348 departing 1
+	Runway B
+		5 63 arriving 2
+Time step 56
+	Entering simulation
+	Runway A
+		33 355 departing 1
+	Runway B
+		6 69 arriving 2
+Time step 57
+	Entering simulation
+	Runway A
+		34 360 departing 1
+	Runway B
+		7 76 arriving 2
+Time step 58
+	Entering simulation
+	Runway A
+		34 362 departing 1
+	Runway B
+		7 77 arriving 2
+Time step 59
+	Entering simulation
+	Runway A
+		34 371 departing 1
+	Runway B
+		7 79 arriving 2
+Time step 60
+	Entering simulation
+	Runway A
+		35 381 departing 1
+	Runway B
+		7 86 arriving 2
+Time step 61
+	Entering simulation
+	Runway A
+		36 390 departing 1
+	Runway B
+		7 90 arriving 2
+Time step 62
+	Entering simulation
+	Runway A
+		3 35 departing 2
+	Runway B
+		8 101 arriving 2
+Time step 63
+	Entering simulation
+	Runway A
+		3 36 departing 2
+	Runway B
+		8 102 arriving 2
+Time step 64
+	Entering simulation
+	Runway A
+		4 40 departing 2
+	Runway B
+		10 120 arriving 2
+Time step 65
+	Entering simulation
+	Runway A
+		4 48 departing 2
+	Runway B
+		10 125 arriving 2
+Time step 66
+	Entering simulation
+	Runway A
+		5 64 departing 2
+	Runway B
+		11 129 arriving 2
+Time step 67
+	Entering simulation
+	Runway A
+		5 66 departing 2
+	Runway B
+		11 130 arriving 2
+Time step 68
+	Entering simulation
+	Runway A
+		6 74 departing 2
+	Runway B
+		15 164 arriving 2
+Time step 69
+	Entering simulation
+	Runway A
+		7 83 departing 2
+	Runway B
+		15 165 arriving 2
+Time step 70
+	Entering simulation
+	Runway A
+		8 99 departing 2
+	Runway B
+		15 166 arriving 2
+Time step 71
+	Entering simulation
+	Runway A
+		8 100 departing 2
+	Runway B
+		15 168 arriving 2
+Time step 72
+	Entering simulation
+	Runway A
+		9 107 departing 2
+	Runway B
+		15 174 arriving 2
+Time step 73
+	Entering simulation
+	Runway A
+		9 109 departing 2
+	Runway B
+		16 182 arriving 2
+Time step 74
+	Entering simulation
+	Runway A
+		9 112 departing 2
+	Runway B
+		16 183 arriving 2
+Time step 75
+	Entering simulation
+	Runway A
+		10 118 departing 2
+	Runway B
+		18 201 arriving 2
+Time step 76
+	Entering simulation
+	Runway A
+		10 122 departing 2
+	Runway B
+		18 208 arriving 2
+Time step 77
+	Entering simulation
+	Runway A
+		11 136 departing 2
+	Runway B
+		19 210 arriving 2
+Time step 78
+	Entering simulation
+	Runway A
+		13 146 departing 2
+	Runway B
+		20 217 arriving 2
+Time step 79
+	Entering simulation
+	Runway A
+		16 180 departing 2
+	Runway B
+		20 223 arriving 2
+Time step 80
+	Entering simulation
+	Runway A
+		17 184 departing 2
+	Runway B
+		21 234 arriving 2
+Time step 81
+	Entering simulation
+	Runway A
+		17 191 departing 2
+	Runway B
+		21 248 arriving 2
+Time step 82
+	Entering simulation
+	Runway A
+		19 212 departing 2
+	Runway B
+		23 268 arriving 2
+Time step 83
+	Entering simulation
+	Runway A
+		19 213 departing 2
+	Runway B
+		23 269 arriving 2
+Time step 84
+	Entering simulation
+	Runway A
+		20 219 departing 2
+	Runway B
+		24 286 arriving 2
+Time step 85
+	Entering simulation
+	Runway A
+		20 224 departing 2
+	Runway B
+		25 287 arriving 2
+Time step 86
+	Entering simulation
+	Runway A
+		20 229 departing 2
+	Runway B
+		26 291 arriving 2
+Time step 87
+	Entering simulation
+	Runway A
+		20 233 departing 2
+	Runway B
+		28 302 arriving 2
+Time step 88
+	Entering simulation
+	Runway A
+		21 244 departing 2
+	Runway B
+		29 310 arriving 2
+Time step 89
+	Entering simulation
+	Runway A
+		22 256 departing 2
+	Runway B
+		29 315 arriving 2
+Time step 90
+	Entering simulation
+	Runway A
+		23 262 departing 2
+	Runway B
+		30 328 arriving 2
+Time step 91
+	Entering simulation
+	Runway A
+		23 263 departing 2
+	Runway B
+		31 331 arriving 2
+Time step 92
+	Entering simulation
+	Runway A
+		23 271 departing 2
+	Runway B
+		32 351 arriving 2
+Time step 93
+	Entering simulation
+	Runway A
+		25 288 departing 2
+	Runway B
+		34 358 arriving 2
+Time step 94
+	Entering simulation
+	Runway A
+		25 290 departing 2
+	Runway B
+		34 364 arriving 2
+Time step 95
+	Entering simulation
+	Runway A
+		26 293 departing 2
+	Runway B
+		34 372 arriving 2
+Time step 96
+	Entering simulation
+	Runway A
+		28 301 departing 2
+	Runway B
+		0 7 arriving 3
+Time step 97
+	Entering simulation
+	Runway A
+		29 308 departing 2
+	Runway B
+		1 14 arriving 3
+Time step 98
+	Entering simulation
+	Runway A
+		30 324 departing 2
+	Runway B
+		2 17 arriving 3
+Time step 99
+	Entering simulation
+	Runway A
+		31 329 departing 2
+	Runway B
+		2 21 arriving 3
+Time step 100
+	Entering simulation
+	Runway A
+		31 333 departing 2
+	Runway B
+		2 27 arriving 3
+Time step 101
+	Entering simulation
+	Runway A
+		31 343 departing 2
+	Runway B
+		2 29 arriving 3
+Time step 102
+	Entering simulation
+	Runway A
+		34 361 departing 2
+	Runway B
+		4 41 arriving 3
+Time step 103
+	Entering simulation
+	Runway A
+		34 368 departing 2
+	Runway B
+		5 54 arriving 3
+Time step 104
+	Entering simulation
+	Runway A
+		35 378 departing 2
+	Runway B
+		5 56 arriving 3
+Time step 105
+	Entering simulation
+	Runway A
+		0 1 departing 3
+	Runway B
+		5 58 arriving 3
+Time step 106
+	Entering simulation
+	Runway A
+		0 6 departing 3
+	Runway B
+		6 71 arriving 3
+Time step 107
+	Entering simulation
+	Runway A
+		2 15 departing 3
+	Runway B
+		7 84 arriving 3
+Time step 108
+	Entering simulation
+	Runway A
+		2 24 departing 3
+	Runway B
+		7 88 arriving 3
+Time step 109
+	Entering simulation
+	Runway A
+		3 34 departing 3
+	Runway B
+		7 89 arriving 3
+Time step 110
+	Entering simulation
+	Runway A
+		4 42 departing 3
+	Runway B
+		7 91 arriving 3
+Time step 111
+	Entering simulation
+	Runway A
+		4 45 departing 3
+	Runway B
+		8 93 arriving 3
+Time step 112
+	Entering simulation
+	Runway A
+		8 94 departing 3
+	Runway B
+		8 105 arriving 3
+Time step 113
+	Entering simulation
+	Runway A
+		8 98 departing 3
+	Runway B
+		8 106 arriving 3
+Time step 114
+	Entering simulation
+	Runway A
+		9 110 departing 3
+	Runway B
+		10 119 arriving 3
+Time step 115
+	Entering simulation
+	Runway A
+		9 115 departing 3
+	Runway B
+		10 123 arriving 3
+Time step 116
+	Entering simulation
+	Runway A
+		10 121 departing 3
+	Runway B
+		11 132 arriving 3
+Time step 117
+	Entering simulation
+	Runway A
+		11 128 departing 3
+	Runway B
+		11 135 arriving 3
+Time step 118
+	Entering simulation
+	Runway A
+		13 145 departing 3
+	Runway B
+		13 140 arriving 3
+Time step 119
+	Entering simulation
+	Runway A
+		13 148 departing 3
+	Runway B
+		13 142 arriving 3
+Time step 120
+	Entering simulation
+	Runway A
+		13 149 departing 3
+	Runway B
+		14 160 arriving 3
+Time step 121
+	Entering simulation
+	Runway A
+		13 150 departing 3
+	Runway B
+		14 163 arriving 3
+Time step 122
+	Entering simulation
+	Runway A
+		13 155 departing 3
+	Runway B
+		15 171 arriving 3
+Time step 123
+	Entering simulation
+	Runway A
+		14 158 departing 3
+	Runway B
+		17 188 arriving 3
+Time step 124
+	Entering simulation
+	Runway A
+		16 181 departing 3
+	Runway B
+		17 189 arriving 3
+Time step 125
+	Entering simulation
+	Runway A
+		17 185 departing 3
+	Runway B
+		17 190 arriving 3
+Time step 126
+	Entering simulation
+	Runway A
+		18 199 departing 3
+	Runway B
+		17 193 arriving 3
+Time step 127
+	Entering simulation
+	Runway A
+		18 202 departing 3
+	Runway B
+		18 198 arriving 3
+Time step 128
+	Entering simulation
+	Runway A
+		18 204 departing 3
+	Runway B
+		18 200 arriving 3
+Time step 129
+	Entering simulation
+	Runway A
+		18 207 departing 3
+	Runway B
+		18 203 arriving 3
+Time step 130
+	Entering simulation
+	Runway A
+		20 216 departing 3
+	Runway B
+		20 218 arriving 3
+Time step 131
+	Entering simulation
+	Runway A
+		20 231 departing 3
+	Runway B
+		20 225 arriving 3
+Time step 132
+	Entering simulation
+	Runway A
+		21 239 departing 3
+	Runway B
+		21 235 arriving 3
+Time step 133
+	Entering simulation
+	Runway A
+		22 257 departing 3
+	Runway B
+		21 237 arriving 3
+Time step 134
+	Entering simulation
+	Runway A
+		22 259 departing 3
+	Runway B
+		21 242 arriving 3
+Time step 135
+	Entering simulation
+	Runway A
+		24 274 departing 3
+	Runway B
+		23 272 arriving 3
+Time step 136
+	Entering simulation
+	Runway A
+		24 276 departing 3
+	Runway B
+		24 273 arriving 3
+Time step 137
+	Entering simulation
+	Runway A
+		24 280 departing 3
+	Runway B
+		24 277 arriving 3
+Time step 138
+	Entering simulation
+	Runway A
+		24 282 departing 3
+	Runway B
+		24 281 arriving 3
+Time step 139
+	Entering simulation
+	Runway A
+		25 289 departing 3
+	Runway B
+		26 292 arriving 3
+Time step 140
+	Entering simulation
+	Runway A
+		28 297 departing 3
+	Runway B
+		28 299 arriving 3
+Time step 141
+	Entering simulation
+	Runway A
+		28 303 departing 3
+	Runway B
+		28 304 arriving 3
+Time step 142
+	Entering simulation
+	Runway A
+		29 316 departing 3
+	Runway B
+		29 309 arriving 3
+Time step 143
+	Entering simulation
+	Runway A
+		29 318 departing 3
+	Runway B
+		31 332 arriving 3
+Time step 144
+	Entering simulation
+	Runway A
+		30 327 departing 3
+	Runway B
+		31 339 arriving 3
+Time step 145
+	Entering simulation
+	Runway A
+		31 337 departing 3
+	Runway B
+		31 341 arriving 3
+Time step 146
+	Entering simulation
+	Runway A
+		32 346 departing 3
+	Runway B
+		31 342 arriving 3
+Time step 147
+	Entering simulation
+	Runway A
+		32 352 departing 3
+	Runway B
+		32 345 arriving 3
+Time step 148
+	Entering simulation
+	Runway A
+		33 356 departing 3
+	Runway B
+		34 357 arriving 3
+Time step 149
+	Entering simulation
+	Runway A
+		35 377 departing 3
+	Runway B
+		34 363 arriving 3
+Time step 150
+	Entering simulation
+	Runway A
+		36 386 departing 3
+	Runway B
+		34 369 arriving 3
+Time step 151
+	Entering simulation
+	Runway A
+		36 387 departing 3
+	Runway B
+		34 374 arriving 3
+Time step 152
+	Entering simulation
+	Runway A
+		36 388 departing 3
+	Runway B
+		36 382 arriving 3
+Time step 153
+	Entering simulation
+	Runway A
+		36 391 departing 3
+	Runway B
+		36 385 arriving 3
+Time step 154
+	Entering simulation
+	Runway A
+		0 2 departing 4
+	Runway B
+		2 25 arriving 4
+Time step 155
+	Entering simulation
+	Runway A
+		0 4 departing 4
+	Runway B
+		6 73 arriving 4
+Time step 156
+	Entering simulation
+	Runway A
+		0 5 departing 4
+	Runway B
+		8 95 arriving 4
+Time step 157
+	Entering simulation
+	Runway A
+		0 8 departing 4
+	Runway B
+		8 103 arriving 4
+Time step 158
+	Entering simulation
+	Runway A
+		1 11 departing 4
+	Runway B
+		8 104 arriving 4
+Time step 159
+	Entering simulation
+	Runway A
+		2 16 departing 4
+	Runway B
+		10 116 arriving 4
+Time step 160
+	Entering simulation
+	Runway A
+		2 20 departing 4
+	Runway B
+		10 117 arriving 4
+Time step 161
+	Entering simulation
+	Runway A
+		2 23 departing 4
+	Runway B
+		11 133 arriving 4
+Time step 162
+	Entering simulation
+	Runway A
+		2 30 departing 4
+	Runway B
+		11 134 arriving 4
+Time step 163
+	Entering simulation
+	Runway A
+		4 47 departing 4
+	Runway B
+		12 138 arriving 4
+Time step 164
+	Entering simulation
+	Runway A
+		5 55 departing 4
+	Runway B
+		13 147 arriving 4
+Time step 165
+	Entering simulation
+	Runway A
+		5 57 departing 4
+	Runway B
+		13 154 arriving 4
+Time step 166
+	Entering simulation
+	Runway A
+		5 67 departing 4
+	Runway B
+		14 161 arriving 4
+Time step 167
+	Entering simulation
+	Runway A
+		6 75 departing 4
+	Runway B
+		14 162 arriving 4
+Time step 168
+	Entering simulation
+	Runway A
+		7 85 departing 4
+	Runway B
+		15 177 arriving 4
+Time step 169
+	Entering simulation
+	Runway A
+		7 87 departing 4
+	Runway B
+		17 187 arriving 4
+Time step 170
+	Entering simulation
+	Runway A
+		9 114 departing 4
+	Runway B
+		18 194 arriving 4
+Time step 171
+	Entering simulation
+	Runway A
+		10 124 departing 4
+	Runway B
+		18 196 arriving 4
+Time step 172
+	Entering simulation
+	Runway A
+		12 137 departing 4
+	Runway B
+		19 209 arriving 4
+Time step 173
+	Entering simulation
+	Runway A
+		12 139 departing 4
+	Runway B
+		20 221 arriving 4
+Time step 174
+	Entering simulation
+	Runway A
+		13 151 departing 4
+	Runway B
+		20 232 arriving 4
+Time step 175
+	Entering simulation
+	Runway A
+		15 167 departing 4
+	Runway B
+		21 241 arriving 4
+Time step 176
+	Entering simulation
+	Runway A
+		15 175 departing 4
+	Runway B
+		21 245 arriving 4
+Time step 177
+	Entering simulation
+	Runway A
+		15 176 departing 4
+	Runway B
+		21 247 arriving 4
+Time step 178
+	Entering simulation
+	Runway A
+		15 179 departing 4
+	Runway B
+		22 255 arriving 4
+Time step 179
+	Entering simulation
+	Runway A
+		17 186 departing 4
+	Runway B
+		24 284 arriving 4
+Time step 180
+	Entering simulation
+	Runway A
+		17 192 departing 4
+	Runway B
+		24 285 arriving 4
+Time step 181
+	Entering simulation
+	Runway A
+		18 195 departing 4
+	Runway B
+		27 294 arriving 4
+Time step 182
+	Entering simulation
+	Runway A
+		19 215 departing 4
+	Runway B
+		28 307 arriving 4
+Time step 183
+	Entering simulation
+	Runway A
+		20 226 departing 4
+	Runway B
+		29 313 arriving 4
+Time step 184
+	Entering simulation
+	Runway A
+		20 227 departing 4
+	Runway B
+		29 314 arriving 4
+Time step 185
+	Entering simulation
+	Runway A
+		21 236 departing 4
+	Runway B
+		29 321 arriving 4
+Time step 186
+	Entering simulation
+	Runway A
+		21 238 departing 4
+	Runway B
+		31 335 arriving 4
+Time step 187
+	Entering simulation
+	Runway A
+		23 265 departing 4
+	Runway B
+		32 349 arriving 4
+Time step 188
+	Entering simulation
+	Runway A
+		23 266 departing 4
+	Runway B
+		32 354 arriving 4
+Time step 189
+	Entering simulation
+	Runway A
+		27 296 departing 4
+	Runway B
+		34 359 arriving 4
+Time step 190
+	Entering simulation
+	Runway A
+		28 300 departing 4
+	Runway B
+		34 366 arriving 4
+Time step 191
+	Entering simulation
+	Runway A
+		28 306 departing 4
+	Runway B
+		34 367 arriving 4
+Time step 192
+	Entering simulation
+	Runway A
+		30 325 departing 4
+	Runway B
+		36 384 arriving 4
+Time step 193
+	Entering simulation
+	Runway A
+		31 336 departing 4
+	Runway B
+		36 389 arriving 4
+Time step 194
+	Entering simulation
+	Runway A
+		32 347 departing 4
+	Runway B
+		32 353 departing 4
+Time step 195
+	Entering simulation
+	Runway A
+		34 375 departing 4
+	Runway B
+		35 379 departing 4
+Time step 196
+	Entering simulation
+	Runway A
+		36 393 departing 4
+	Runway B
