@@ -78,19 +78,25 @@ public:    //variables
     //for max heapify, push
     //for the t31 fail its gotta be this im so silly <- handle same toe and prior
     bool operator>(const Aircraft& other) const{
-        //if priority is the same then its based on toe
-        //now need to add equivalency for equal priorities && same toe for which I added input order var
-        if (acPriority == other.acPriority){
-            if(tOE == other.tOE){
-                return inputOrder < other.inputOrder;
-            }
+        if(acPriority != other.acPriority){
+            return acPriority < other.acPriority;
+        }
+        if(tOE != other.tOE){
             return tOE < other.tOE;
         }
-        return acPriority < other.acPriority;
-    }
 
+        return inputOrder < other.inputOrder;
+
+    }
+    //for t04 the last time step is flipped and it is because i am not handling same edges with < operator
     bool operator<(const Aircraft& other) const {
-        return !(*this > other);
+        if(acPriority != other.acPriority){
+            return acPriority > other.acPriority;
+        }
+        if(tOE != other.tOE){
+            return tOE > other.tOE;
+        }
+        return inputOrder > other.inputOrder;
     }
 };
 
@@ -178,28 +184,28 @@ public:
 
         int i = heap.size() - 1;
 
-        while(i > 0 && heap[floor((i -1) / 2)] < heap[i]){
-            swap(heap[i], heap[floor((i - 1) / 2)]);
-            i = floor((i - 1) / 2);
+        while(i > 0 && heap[(i -1) / 2] < heap[i]){
+            swap(heap[i], heap[(i - 1) / 2]);
+            i = (i - 1) / 2;
         }
 
     }
 
     void pop() {
         if (empty()){
-            cerr << "PQueue is empty" << endl;
             return;
         }
         //replace root with last element
         heap[0] = heap.back();
         heap.pop_back();
 
-        maxHeapify(0);
+        if(!empty()){
+            maxHeapify(0);
+        }
     }
 
     Aircraft peek() const {
         if (empty()) {
-            cerr << "PQueue is empty" <<endl;
             return Aircraft();
         }
         return heap[0];
@@ -310,6 +316,7 @@ int main() {
         aircraftList.push_back(Aircraft(time, id, priority, status, inputOrderCounter));
         inputOrderCounter++;
     }
+
     //now start simulation
     //track time for stepping
     int currentTime = 0;
@@ -349,20 +356,6 @@ int main() {
         bool runwayBUsed = false;
 
         //process runways
-        //runway A
-        if(!departures.empty()) {
-            aircraftA = departures.peek();
-            departures.pop();
-            runwayAUsed = true;
-            eventOccurred = true;
-        }
-        else if(!arrivals.empty()){
-            aircraftA = arrivals.peek();
-            arrivals.pop();
-            runwayAUsed = true;
-            eventOccurred = true;
-        }
-
         //runway b
         if(!arrivals.empty()) {
             aircraftB = arrivals.peek();
@@ -370,12 +363,33 @@ int main() {
             runwayBUsed = true;
             eventOccurred = true;
         }
-        else if(!departures.empty()){
+
+        if(!departures.empty()) {
+            aircraftA = departures.peek();
+            departures.pop();
+            runwayAUsed = true;
+            eventOccurred = true;
+        }
+
+        //runway b
+        else if(!arrivals.empty()) {
+            aircraftA = arrivals.peek();
+            arrivals.pop();
+            runwayAUsed = true;
+            eventOccurred = true;
+        }
+
+        if(!runwayBUsed && !departures.empty()) {
             aircraftB = departures.peek();
             departures.pop();
             runwayBUsed = true;
             eventOccurred = true;
         }
+        /*
+        this turned out to be the issue in addition to the overloaded operators
+        rather than using ifs/elif needed to add a case that would catch runway B used and
+        departues is empty
+        */
 
         /*now everytime an event happens need to output
         output format:

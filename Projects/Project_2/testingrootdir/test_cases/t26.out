@@ -1,0 +1,64 @@
+Time step 4
+	Entering simulation
+		4 1 arriving 4
+	Runway A
+	Runway B
+		4 1 arriving 4
+Time step 12
+	Entering simulation
+		12 2 departing 3
+	Runway A
+		12 2 departing 3
+	Runway B
+Time step 15
+	Entering simulation
+		15 3 departing 4
+		15 4 departing 3
+		15 5 arriving 2
+		15 6 departing 4
+		15 7 arriving 2
+	Runway A
+		15 4 departing 3
+	Runway B
+		15 5 arriving 2
+Time step 16
+	Entering simulation
+		16 8 arriving 3
+		16 9 departing 4
+	Runway A
+		15 3 departing 4
+	Runway B
+		15 7 arriving 2
+Time step 17
+	Entering simulation
+	Runway A
+		15 6 departing 4
+	Runway B
+		16 8 arriving 3
+Time step 18
+	Entering simulation
+	Runway A
+		16 9 departing 4
+	Runway B
+Time step 40
+	Entering simulation
+		40 10 arriving 3
+		40 11 departing 2
+		40 12 arriving 1
+		40 13 arriving 2
+		40 14 departing 3
+	Runway A
+		40 11 departing 2
+	Runway B
+		40 12 arriving 1
+Time step 41
+	Entering simulation
+	Runway A
+		40 14 departing 3
+	Runway B
+		40 13 arriving 2
+Time step 42
+	Entering simulation
+	Runway A
+	Runway B
+		40 10 arriving 3
