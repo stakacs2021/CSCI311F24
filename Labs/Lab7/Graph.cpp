@@ -24,7 +24,7 @@ Format for list:
 line start with node id, then :, followed by space separated list of adjacent nodes
 one line per node
 order of nodes is determined by order in which neighbors of each node is stored
-
+iteratate through all notes and find neighbors
 */
 void Graph::printAdjList(){
     //look through all nodes based on order of their ids
@@ -66,15 +66,25 @@ bool Graph::isNeighbor(int u, int v){
 
 /*
 prepares the graph for dfs and will call the recursive helper funtion dfs visit
+function DFS(G):
+ for u in v
+    u.visited = false
+    u.predecessor - null
+    u.discovered = -1
+    u.finished = - 1
+time = 0
+for u in v:
+    if u.visited == false
+    time = DFSVisist(G, u , time)
 */
 void Graph::DFS(){
 
     //first prep the graph by setting all nodes to initial state
     for(int i = 0; i < nodes.size(); i++){
         nodes[i]->visited = false;
+        nodes[i]->predecessor = nullptr;
         nodes[i]->discovered = -1;
         nodes[i]->finished = -1;
-        nodes[i]->predecessor = nullptr;
     }
     //for dfs visit need start time
     int time = 0;
@@ -90,27 +100,62 @@ void Graph::DFS(){
 /*
 runs the dfs search from node s with start time. keeps track of discovery and finish times for each node
 discover time for first node visited should be 1
+pesudocode:
+funnctionDFSvisit(G, u, time)
+time = time + 1
+u.discovered = true
+u.visited = true
+for v in neighbors(G, u):
+    if v.visited = false
+     v.predecessor = u
+     time = DFSVisist(G, v, time)
+time = time + 1
+u.finished = true
+return time
 */
 int Graph::DFSVisit(int s, int time){
-    nodes[s]->visited = true;
-    //increment time
+    // Increment time first
     time++;
-    //record discovery time
+    // Set discovered time and mark as visited
     nodes[s]->discovered = time;
+    nodes[s]->visited = true;
 
+    // Visit all unvisited neighbors
     for (size_t i = 0; i < nodes[s]->neighbors.size(); i++) {
         if (!nodes[s]->neighbors[i]->visited) {
             nodes[s]->neighbors[i]->predecessor = nodes[s];
             time = DFSVisit(nodes[s]->neighbors[i]->id, time);
-            }
         }
+    }
 
-        time++;
-        nodes[s]->finished = time;
-        return time;
+    // Increment time and set finish time
+    time++;
+    nodes[s]->finished = time;
+    return time;
 }
 
 //perform bfs from node s
+/*
+pseudocode from lecture slides
+fu n c t i o n B F S ( G , s )
+f o r u i n V
+u . di s t = ∞
+u . v i s i t e d = f a l s e
+u . pr e de c e s s or = nul l
+s . di s t = 0
+s . v i s i t e d = t r ue
+Q = que ue ( )
+Q. pus h ( s )
+whi l e l e ng t h ( Q) > 0
+u = Q. pop ( )
+f o r v i n n e i g h b o r s ( G , u )
+i f v . v i s i t e d == f a l s e
+v . di s t = u.dist + 1
+v . v i s i t e d = t r ue v .
+pr e de c e s s or = u Q.
+pus h ( v )
+
+*/
 void Graph::BFS(int s){
 
     for (size_t i = 0; i < nodes.size(); i++) {
