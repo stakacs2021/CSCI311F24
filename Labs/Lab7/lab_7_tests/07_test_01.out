@@ -1,0 +1,12 @@
+MAKE GRAPH
+ADJACENCY LIST
+0: 1 
+1: 0 2 
+2: 1 
+IS NEIGHBOR
+0 1 True
+1 0 True
+0 2 False
+2 0 False
+1 2 True
+2 1 True
